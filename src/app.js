@@ -94,6 +94,6 @@ app.get('*',(req,res) =>{
     })
 })
 
-app.listen(process.env.PORT,host, () =>{
+app.listen(process.env.PORT ||3000,host, () =>{
     console.log('Server is up on port ' + port)
 })
